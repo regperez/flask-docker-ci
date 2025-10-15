@@ -18,11 +18,12 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.rperez19 }}
-          password: ${{ secrets.dckr_pat_Bcy2Sixbt0GRHMey089bq1GqDCI }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.rperez19 }}/flask-hello:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flask-hello:latest
+
