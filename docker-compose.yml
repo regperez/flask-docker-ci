@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  web:
+    image: flask-hello:latest
+    build: .
+    ports:
+      - "5000:5000"
