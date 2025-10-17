@@ -31,4 +31,4 @@ x-casaos:
     port_map: "5000"
     scheme: http
     title:
-        custom: Flask-app
+        custom: Flask Hello
